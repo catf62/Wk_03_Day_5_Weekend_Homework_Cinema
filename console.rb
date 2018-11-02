@@ -102,7 +102,7 @@ binding.pry
 # pp ticket1
 
 pp customer1.films_booked()
-
+pp film1.customers_attending()
 
 Ticket.delete_all()
 Customer.delete_all()
