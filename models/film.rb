@@ -67,4 +67,9 @@ class Film
     return films.map { |film| Customer.new(film) }
   end
 
+  def number_of_customers_attending()
+  film_customers_attending = self.customers_attending()
+  return film_customers_attending.length
+  end
+
 end

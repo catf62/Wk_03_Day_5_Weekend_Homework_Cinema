@@ -67,4 +67,16 @@ class Customer
     return films.map { |film| Film.new(film) }
   end
 
+  def pay_for_tickets()
+    tickets = self.films_booked()
+    ticket_prices = tickets.map{ |ticket| ticket.price }
+    tickets_cost = ticket_prices.sum
+    return @funds - tickets_cost
+  end
+
+  def number_of_films_booked()
+  customer_films_booked = self.films_booked()
+  return customer_films_booked.length
+  end
+
 end

@@ -101,8 +101,16 @@ binding.pry
 # ticket1.update()
 # pp ticket1
 
-pp customer1.films_booked()
-pp film1.customers_attending()
+# pp customer1.films_booked()
+# pp film1.customers_attending()
+
+# pp customer1.pay_for_tickets()
+# customer1.funds = customer1.pay_for_tickets()
+# customer1.update()
+
+# pp customer1.number_of_films_booked()
+pp film2.number_of_customers_attending()
+
 
 Ticket.delete_all()
 Customer.delete_all()
